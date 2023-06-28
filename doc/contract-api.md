@@ -67,7 +67,6 @@ Speed limit: 15 times/1min, Speed limit rule: IP
 ```
 GET /kLine/byFrom
 ```
-
 ### **Parameters：**
 | Name|Type|Required|Default|Description |
 | ------------ | ------------ | ------------ | ------------ | ---- |
