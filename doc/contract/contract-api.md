@@ -1990,3 +1990,10 @@ Name|Type|Example|Description
   "event": "orderUpdate"
 }
 ```
+
+# Code Description
+
+
+Code|Description|
+------------ | ------------ | 
+`29014`|Request too frequent, please try again later|
