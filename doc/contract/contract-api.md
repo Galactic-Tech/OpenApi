@@ -1994,6 +1994,77 @@ Name|Type|Example|Description
 # Code Description
 
 
-Code|Description|
------------- | ------------ | 
-`29014`|Request too frequent, please try again later|
+Code|Description
+------------ | ------------ 
+`20014`| Account id doesn't exist
+`20041`| Ip address is prohibited
+`20043`| Parameter format is wrong
+`20045`| Order too fast
+`20048`| Order too many
+`20095`| Child account been frozen
+`20117`| Invalid token value
+`20118`| Invalid order price
+`20125`| Fund of account is changing, Please try again later
+`21010`| Exceed open position line
+`21011`| Exceed max leverage setting
+`21012`| Can't trade real contract with virtual currency
+`21013`| Can't trade virtual contract with real currency
+`24001`| Symbol not found
+`24004`| Order quantity should be an integer multiple of lot size
+`24005`| Order price should be an integer multiple of tick
+`25004`| Order id already exists
+`25005`| Order id not found
+`25006`| Order already completed
+`25009`| Invalid order quantity
+`25011`| Order quantity must be greater than 0
+`25012`| Order price must be greater than 0
+`25016`| Invalid order type
+`25017`| Invalid order side
+`25020`| Quote is invalid
+`25021`| Insufficient fund
+`25022`| There is pending order for this instrument
+`25025`| Not enough closable qty for position
+`25027`| Invalid trigger price
+`25030`| Nothing is changed
+`25031`| Invalid leverage value
+`25032`| Invalid Stop loss price
+`25033`| Invalid Stop win price
+`25034`| Can't add deposit for none-individual position
+`25035`| Empty position
+`25036`| No enough position deposit to extract
+`25037`| Maintenance margin is not enough
+`25038`| Initial margin is not enough
+`25039`| Risk limit is not correct
+`25040`| Risk limit exceed
+`25041`| Can't amend risk order
+`25042`| Can't cancel risk order
+`25043`| Price of buy order can't be less than stop loss
+`25044`| Price of buy order can't be greater than stop win
+`25045`| Price of sell order can't be greater than stop loss
+`25046`| Price of sell order can't be less than stop win
+`25051`| Order price is out range of index price limitation
+`25052`| Closing Position, Please waiting
+`25053`| Please close position first
+`25062`| Net position would be over limit
+`25063`| Invalid trigger type
+`25064`| Invalid show quantity
+`25065`| Hidden order can't be passive
+`25066`| Can't set both trailing stop & stop loss
+`25067`| Please change only one parameter each time
+`25068`| Can only set trigger price for conditional order
+`25069`| Invalid trailing stop value
+`25070`| Invalid stop win type
+`25071`| Risk setting is not allowed for close position order
+`25072`| ReversalOrder operating, Please waiting
+`25073`| ClosePosition operating, Please waiting
+`25074`| ClosePos and CancelOrder operating, Please waiting
+`25078`| The symbol is restricted to trade
+`25079`| The account currency is restricted to trade
+`29001`| Invalid key value
+`29002`| Key disabled
+`29003`| No permission of the key
+`29004`| Wrong signature value
+`29005`| Request expired
+`29006`| Invalid ip address
+`29011`| Param is wrong
+`29014`| Request too frequent, please try again later
