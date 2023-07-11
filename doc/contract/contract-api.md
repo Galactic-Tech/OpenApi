@@ -1996,35 +1996,72 @@ Name|Type|Example|Description
 
 Code|Description
 ------------ | ------------ 
+`0`| OK
+`20004`| System is offline
+`20013`| Transaction sent too fast
 `20014`| Account id doesn't exist
+`20032`| Request is refused
+`20035`| Balance is not enough
+`20040`| User setting doesn't exist
 `20041`| Ip address is prohibited
 `20043`| Parameter format is wrong
 `20045`| Order too fast
 `20048`| Order too many
-`20095`| Child account been frozen
+`20088`| Login blocked
+`20089`| Operation too fast
+`20093`| Subuser doesn't exist
+`20094`| Subaccount doesn't exist
+`20095`| Subaccount has been frozen
+`20096`| Min Qty count limit
+`20097`| Subaccount cash not zero
+`20109`| The account has expired, please contact the administrator
+`20111`| Account has triggered risk control, please contact the administrator
 `20117`| Invalid token value
 `20118`| Invalid order price
-`20125`| Fund of account is changing, Please try again later
-`21010`| Exceed open position line
-`21011`| Exceed max leverage setting
+`20120`| User State disallows this action
+`20121`| Operate frequently, try again 60 seconds later
+`20122`| Operate frequently, try again 24 hours later
+`20125`| Fund in account is changing, please try again later
+`20135`| No permission
+`20138`| Cancel limit exceeded. Try again in 24 hours
+`20140`| Too many completed orders
+`20141`| Too many incompleted orders
+`20146`| Manage amount more than 30
+`21010`| Exceeds the open position line
+`21011`| Exceeds the max leverage setting
 `21012`| Can't trade real contract with virtual currency
 `21013`| Can't trade virtual contract with real currency
+`23016`| Transaction is still pending
+`23017`| Order qty inquiry error
 `24001`| Symbol not found
+`24002`| Invalid market
+`24003`| Invalid currency
 `24004`| Order quantity should be an integer multiple of lot size
 `24005`| Order price should be an integer multiple of tick
+`25001`| Order field is empty
+`25002`| Order field error
 `25004`| Order id already exists
 `25005`| Order id not found
 `25006`| Order already completed
+`25007`| Account state disallow this action
+`25008`| Daily order exceeds limit
 `25009`| Invalid order quantity
+`25010`| Data conversion error
 `25011`| Order quantity must be greater than 0
 `25012`| Order price must be greater than 0
+`25013`| Can't amend up order qty
+`25014`| One of price & qty must be specified to amend
+`25015`| Cant allocate account for order
 `25016`| Invalid order type
 `25017`| Invalid order side
+`25018`| Exchange order id not found
+`25019`| No price for credit calculation
 `25020`| Quote is invalid
 `25021`| Insufficient fund
 `25022`| There is pending order for this instrument
 `25025`| Not enough closable qty for position
 `25027`| Invalid trigger price
+`25029`| Position exists in the account, please close it first
 `25030`| Nothing is changed
 `25031`| Invalid leverage value
 `25032`| Invalid Stop loss price
@@ -2035,19 +2072,21 @@ Code|Description
 `25037`| Maintenance margin is not enough
 `25038`| Initial margin is not enough
 `25039`| Risk limit is not correct
-`25040`| Risk limit exceed
+`25040`| Risk limit is exceeded
 `25041`| Can't amend risk order
 `25042`| Can't cancel risk order
 `25043`| Price of buy order can't be less than stop loss
 `25044`| Price of buy order can't be greater than stop win
 `25045`| Price of sell order can't be greater than stop loss
 `25046`| Price of sell order can't be less than stop win
+`25048`| Account cash is not enough
+`25049`| Risk limit is not enough
 `25051`| Order price is out range of index price limitation
-`25052`| Closing Position, Please waiting
+`25052`| Closing position, please wait
 `25053`| Please close position first
-`25062`| Net position would be over limit
+`25062`| Net position would exceed the limit
 `25063`| Invalid trigger type
-`25064`| Invalid show quantity
+`25064`| Invalid shown quantity
 `25065`| Hidden order can't be passive
 `25066`| Can't set both trailing stop & stop loss
 `25067`| Please change only one parameter each time
@@ -2055,16 +2094,21 @@ Code|Description
 `25069`| Invalid trailing stop value
 `25070`| Invalid stop win type
 `25071`| Risk setting is not allowed for close position order
-`25072`| ReversalOrder operating, Please waiting
-`25073`| ClosePosition operating, Please waiting
-`25074`| ClosePos and CancelOrder operating, Please waiting
-`25078`| The symbol is restricted to trade
-`25079`| The account currency is restricted to trade
+`25072`| Operating reversal order, please wait
+`25073`| Operating close position, please wait
+`25074`| Operating close position and cancel order, please wait
+`25078`| The symbol is restricted from trading
+`25079`| The account currency is restricted from trading
+`25080`| The parameter value exceeds the upper limit
+`29000`| The total limit of key is exceeded
 `29001`| Invalid key value
 `29002`| Key disabled
-`29003`| No permission of the key
+`29003`| Key has no permission
 `29004`| Wrong signature value
 `29005`| Request expired
 `29006`| Invalid ip address
+`29008`| Api key exists for user
+`29009`| Access token is wrong
+`29010`| Access token has expired
 `29011`| Param is wrong
-`29014`| Request too frequent, please try again later
+`29014`| Request too frequently, please try again later
