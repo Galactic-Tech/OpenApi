@@ -41,6 +41,8 @@ Name|Type|Example|Description
 `lotSize`|float|`1.0`|  Defines the minimum quantity allowed
 `tick`|float|`0.00001`| Minimal price value
 `type`|string|`USDT`| Contract type, PERP => Perpetual Contract.
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -85,6 +87,7 @@ Name|Type|Example|Description
 `[4]`|string|`26435.5`|Open Price
 `[6]`|string|`7.08`|Volume eg:BTCUSDT The unit is BTC
 `[7]`|string|`181074.0`|Turnover eg:BTCUSDT The unit is USDT
+
 ### **Example:**
 ```json
 {
