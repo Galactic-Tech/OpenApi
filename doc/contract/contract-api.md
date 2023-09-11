@@ -492,6 +492,7 @@ Name|Type|Example|Description
 `'priceChangeRatio'`|double|`-0.005437842019200944`|Price change ratio
 `'volume'`|double|`6.5697459E7`| eg:BTCUSDT The unit is BTC
 `'turnover'`|double|`2483.5865212475437`|eg:BTCUSDT The unit is USDT
+
 ### **Example:**
 ```js
 {
@@ -535,6 +536,7 @@ Name|Type|Example|Description
 `'date'`|double|`2023-06-19T02:37:53.617+00:00`|Time
 `'qty'`|double|`1084388.0`| eg:BTCUSDT The unit is USDT
 `'value'`|double|`41.035743951380205`|eg:BTCUSDT The unit is BTC
+
 ### **Example:**
 ```js
 {
@@ -560,6 +562,7 @@ Name|Type|Required|Default|Description
 `key`|string|`YES`|`--`| The contract symbol
 `type`|string|`YES`|`--`| 1M, 3M, 5M, 10M, 15M, 30M, 1H, 2H, 4H, 6H, 8H, 12H, D, 3D, W, MTH
 `channel`|string|`YES`|`--`| Channel
+
 ### **Example:**
 ```json
 {
@@ -579,6 +582,7 @@ Name|Type|Example|Description
 `[4]`|string|`26435.5`|Open Price
 `[6]`|string|`7.08`|Volume eg:BTCUSDT The unit is BTC
 `[7]`|string|`181074.0`|Turnover eg:BTCUSDT The unit is USDT
+
 ### **Example:**
 ```js
 {
@@ -619,6 +623,7 @@ Name|Type|Example|Description
 `qty`|double|18873.0| Positive integer, 1Qty=1USDT
 `count`|int|1|Order count
 `iceCount`|int|1|Ice Count
+
 ### **Example:**
 
 ```json
@@ -683,6 +688,7 @@ Name|Type|Required|Default|Description
 `op`|string|`YES`|`--`| subscribe/unsubscribe
 `key`|string|`YES`|`--`| The contract symbol
 `channel`|string|`YES`|`--`| Channel
+
 ### **Example:**
 ```json
 {
@@ -691,6 +697,7 @@ Name|Type|Required|Default|Description
   "channel": "tradeStatistics"
 }
 ```
+
 ### **Response:**
 Name|Type|Example|Description
 ------------ | ------------ | ------------ | ------------
@@ -702,6 +709,7 @@ Name|Type|Example|Description
 `'priceChangeRatio'`|double|`-0.005437842019200944`|Price change ratio
 `'volume'`|double|`6.5697459E7`| eg:BTCUSDT The unit is BTC
 `'turnover'`|double|`2483.5865212475437`|eg:BTCUSDT The unit is USDT
+
 ### **Example:**
 
 ```json
@@ -730,6 +738,7 @@ Name|Type|Required|Default|Description
 `op`|string|`YES`|`--`| subscribe/unsubscribe
 `key`|string|`YES`|`--`| The contract symbol
 `channel`|string|`YES`|`--`| Channel
+
 ### **Example:**
 ```json
 {
@@ -738,6 +747,7 @@ Name|Type|Required|Default|Description
   "channel": "openInterest"
 }
 ```
+
 ### **Response:**
 Name|Type|Example|Description
 ------------ | ------------ | ------------ | ------------
@@ -823,6 +833,7 @@ Name|Type|Example|Description
 `tif`|string|`GTC`|Type of advanced order, Available values : FILL_OR_KILL, GOOD_TILL_CANCEL, IMMEDIATE_OR_CANCEL, QUEUE_OR_CANCEL
 `fee`|double|`--`|Fees incurred for this order.
 
+### **Example:**
 ```json
 {
   "code": 0,
@@ -872,6 +883,7 @@ Name|Type|Required|Default|Description
 `clientOrderId`|string|`O101-20230531-025722-174-1016`|`NO`|An unique order ID which is defined by user
 
 **NOTE** orderId and clientOrderId must pick one of two
+
 ### **Response:**
 Name|Type|Example|Description
 ------------ | ------------ | ------------ | ------------
@@ -903,6 +915,8 @@ Name|Type|Example|Description
 `stopWinPrice`|double|`--`|Stop win price for advanced order
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -986,6 +1000,8 @@ Name|Type|Example|Description
 `stopWinPrice`|double|`--`|Stop win price for advanced order
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1056,6 +1072,8 @@ Name|Type|Example|Description
 `fee`|double|`1.1`|Fees incurred for this order.
 `feeRate`|double|`0.0002`|Fee rate
 `createdTimestamp`|long|`1570759718825`|Timestamp when the order is created
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1129,6 +1147,8 @@ Name|Type|Example|Description
 `stopWinPrice`|double|`--`|Stop win price for advanced order
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1194,6 +1214,7 @@ Name|Type|Example|Description
 ------------ | ------------ | ------------ | ------------
 `result`|integer|`O101-20230531-023520-732-0610`|The order ID or An unique order ID defined by client
 
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1271,6 +1292,8 @@ Name|Type|Example|Description
 `stopWinPrice`|double|`--`|Stop win price for advanced order
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
+
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1490,12 +1513,14 @@ Name|Type|Required|Default|Description
 ------------ | ------------ | ------------ | ------------ | -----
 `twoSidePosition`|boolean|`YES`|`--`|Switch to two side position mode if true, otherwise, switch to one side position mode
 `currency`|string|`YES`|`--`|Currency of account, eg: BTC, ETH, USDT
+
 ### **Response:**
 
 Name|Type|Example|Description
 ------------ | ------------ | ------------ | ------------
 ------------ | ------------ | ------------ | ------------
 
+### **Example:**
 ```json
 {
   "code": 0,
@@ -1522,6 +1547,7 @@ Name|Type|Required|Default|Description
 ------------ | ------------ | ------------ | ------------ | -----
 `individual`|boolean|`YES`|`--`|Position mode, true -> Individual; false -> Cross
 `currency`|string|`YES`|`--`|Currency of account, eg: BTC, ETH, USDT
+
 ### **Response:**
 
 Name|Type|Example|Description
@@ -1555,6 +1581,7 @@ Name|Type|Required|Default|Description
 `leverage`|double|`YES`|`--`|Position leverage
 `symbol`|string|`YES`|`--`|The contract symbol, eg: BTCUSDT
 `currency`|string|`YES`|`--`|Currency of account, eg: BTC, ETH, USDT
+
 ### **Response:**
 
 Name|Type|Example|Description
@@ -1636,7 +1663,6 @@ Name|Type|Example|Description
 `cashAvailable`|double|`0`| Available cash
 
 ### **Example:**
-
 ```json
 {
     "code": 0,
@@ -1792,6 +1818,7 @@ Name|Type|Required|Default|Description
 `apiKey`|string|`YES`|`--`| Apply at the individual center, apikey/apiSecret
 `signature`|string|`YES`|`--`| signature=sha256(secret+channel+expires)Note: The + needs to be removed to generate a signature
 `expires`|long|`YES`|`--`| Custom UTC millisecond timestamp, if the request service time is greater than expires, a timeout will be returned
+
 ### **Example:**
 ```json
 {
@@ -1812,6 +1839,7 @@ Name|Type|Example|Description
 `frozenCash`|double|`0`| Frozen cash
 `urPnl`|double|`0`| Unrealized pnl
 `cashAvailable`|double|`0`| Available cash
+
 ### **Example:**
 ```json
 {
@@ -1839,6 +1867,7 @@ Name|Type|Required|Default|Description
 `apiKey`|string|`YES`|`--`| Apply at the individual center, apikey/apiSecret
 `signature`|string|`YES`|`--`| signature=sha256(secret+channel+expires)Note: The + needs to be removed to generate a signature
 `expires`|long|`YES`|`--`| Custom UTC millisecond timestamp, if the request service time is greater than expires, a timeout will be returned
+
 ### **Example:**
 ```json
 {
@@ -1874,8 +1903,8 @@ Name|Type|Example|Description
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
 `individualPosition`|boolean|false|Individual position
-### **Example:**
 
+### **Example:**
 ```json
 {
   "position": {
@@ -1916,6 +1945,7 @@ Name|Type|Required|Default|Description
 `apiKey`|string|`YES`|`--`| Apply at the individual center, apikey/apiSecret
 `signature`|string|`YES`|`--`| signature=sha256(secret+channel+expires)Note: The + needs to be removed to generate a signature
 `expires`|long|`YES`|`--`| Custom UTC millisecond timestamp, if the request service time is greater than expires, a timeout will be returned
+
 ### **Example:**
 ```json
 {
@@ -1957,6 +1987,7 @@ Name|Type|Example|Description
 `stopWinPrice`|double|`--`|Stop win price for advanced order
 `stopWinType`|string|`--`|Stop win type of price for advanced order, eg: Limit or Market, it's required if stopWinPrice is set Available values : Limit, Market
 `trailingStop`|double|`--`|Trailing stop value for advanced order, conflict with stopLossPrice
+
 ### **Example:**
 ```json
 {
