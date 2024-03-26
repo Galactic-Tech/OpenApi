@@ -2027,6 +2027,7 @@ Name|Type|Example|Description
 
 # Code Description
 
+For code, please refer to the link https://github.com/Galactic-Tech/OpenApi/blob/main/doc/contract/contract-api.md
 
 Code|Description
 ------------ | ------------ 
