@@ -10,7 +10,7 @@ public class Constants {
     public static final String BASE_DOMAIN = "";
 
     // REST api url format: https://api.BASE_DOMAIN
-    // for example: https://api.mexo.io
+    // for example: https://api-spot.trubit.com
     public static final String API_BASE_URL = "https://api." + BASE_DOMAIN;
 
     // Websocket base api url format: wss://wsapi.BASE_DOMAIN/openapi/quote/ws/v1
